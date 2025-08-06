@@ -1,9 +1,9 @@
-import { Currency } from "shared/configs/Currency";
-import { SharedState } from "..";
+import { Currency } from "shared/domain/Currency";
+import { SharedState } from "../index";
 import { createSelector } from "@rbxts/reflex";
 import { defaultPlayerData } from "../slices/players/utils";
 import { PlayerData } from "../slices/players/types";
-import { Setting } from "shared/configs/Settings";
+import { Setting } from "shared/domain/Settings";
 
 export const selectPlayerBalances = ( playerId: string ) => {
     return ( state: SharedState ) => {

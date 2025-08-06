@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "@rbxts/react";
-import { IMAGES, ImageName } from "shared/configs/Gui";
+import { IMAGES, ImageName } from "shared/domain/Gui";
 
 interface Props extends React.PropsWithChildren {
     image?: ImageName;

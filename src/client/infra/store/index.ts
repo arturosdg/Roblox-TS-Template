@@ -1,5 +1,5 @@
 import { InferState, combineProducers } from "@rbxts/reflex";
-import { slices } from "shared/store";
+import { slices } from "shared/infra/store";
 import { receiverMiddleware } from "./middleware/receiver";
 
 export type RootStore = typeof clientStore;

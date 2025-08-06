@@ -3,7 +3,7 @@ import ContainerFrame from "client/system-ui/components/containerFrame";
 import Exit from "client/system-ui/components/exit";
 import Frame from "client/system-ui/components/frame";
 import Title from "client/system-ui/components/title";
-import { SETTINGS } from "shared/configs/Settings";
+import { SETTINGS } from "shared/domain/Settings";
 import SettingButton from "./components/setting-button";
 
 interface Props {

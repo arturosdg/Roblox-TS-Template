@@ -5,9 +5,9 @@ import Frame from "client/system-ui/components/frame";
 import ImageLabel from "client/system-ui/components/imageLabel";
 import TextLabel from "client/system-ui/components/textLabel";
 import { TextLabelButton } from "client/system-ui/components/textLabelButton";
-import { Currency } from "shared/configs/Currency";
-import { selectPlayerBalance } from "shared/store/selectors/players";
-import { COLORS } from "shared/configs/Gui";
+import { Currency } from "shared/domain/Currency";
+import { selectPlayerBalance } from "shared/infra/store/selectors/players";
+import { COLORS } from "shared/domain/Gui";
 import { GetStatePlayerId } from "client/system-ui/utils/GetStatePlayerId";
 
 interface Props extends React.PropsWithChildren {

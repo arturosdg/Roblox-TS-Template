@@ -1,4 +1,4 @@
-import { SETTINGS } from "shared/configs/Settings";
+import { SETTINGS } from "shared/domain/Settings";
 import { PlayerData, PlayerSettings } from "./types";
 
 let settings = {} as PlayerSettings

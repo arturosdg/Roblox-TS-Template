@@ -2,7 +2,7 @@
 import { Networking } from "@flamework/networking";
 import { BroadcastAction } from "@rbxts/reflex";
 import { PlayerData } from "./store/slices/players/types";
-import { Setting } from "./configs/Settings";
+import { Setting } from "../domain/Settings";
 
 interface ServerEvents {
 	reflex: {

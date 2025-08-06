@@ -3,11 +3,11 @@ import Frame from "client/system-ui/components/frame";
 import SettingsApp from "../../system-ui/apps/settings/settings-app";
 import { useSelector } from "@rbxts/react-reflex";
 import CurrencyApp from "../../system-ui/apps/currency/currency-app";
-import { HOLDER_PAGES } from "shared/configs/Gui";
+import { HOLDER_PAGES } from "shared/domain/Gui";
 import { clientStore } from "client/infra/store";
 import { RunService, StarterGui } from "@rbxts/services";
 import { ClientEvents } from "client/infra/network";
-import { selectHolderPage } from "shared/store/selectors/client";
+import { selectHolderPage } from "shared/infra/store/selectors/client";
 import ButtonsApp from "../../system-ui/apps/buttons/buttons-app";
 import TextButton from "client/system-ui/components/textButton";
 

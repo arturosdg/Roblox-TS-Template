@@ -1,6 +1,6 @@
 import { createProducer } from "@rbxts/reflex";
 import { PlayerBalance, PlayerData } from "./types";
-import { Currency } from "shared/configs/Currency";
+import { Currency } from "shared/domain/Currency";
 
 export interface BalanceState {
     readonly [player: string]: PlayerBalance | undefined;

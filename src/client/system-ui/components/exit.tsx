@@ -1,6 +1,6 @@
 import React from "@rbxts/react";
 import { clientStore } from "client/infra/store";
-import { COLORS } from "shared/configs/Gui";
+import { COLORS } from "shared/domain/Gui";
 
 interface Props extends React.PropsWithChildren {
 	uiStrokeSize?: number;

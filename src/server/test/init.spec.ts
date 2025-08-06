@@ -1,7 +1,7 @@
 /// <reference types="@rbxts/testez/globals" />
 
 import { RunService } from "@rbxts/services";
-import { serverStore } from "server/store";
+import { serverStore } from "server/infra/store";
 
 export = () => {
     afterAll( () => {

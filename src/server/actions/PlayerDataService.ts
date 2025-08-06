@@ -3,10 +3,10 @@ import { OnInit, Service } from "@flamework/core";
 import ProfileService from "@rbxts/profileservice";
 import { Profile } from "@rbxts/profileservice/globals";
 import { Players, RunService } from "@rbxts/services";
-import { serverStore } from "server/store";
-import { selectPlayerBalances, selectPlayerData } from "shared/store/selectors/players";
-import { PlayerData } from "shared/store/slices/players/types";
-import { defaultPlayerData } from "shared/store/slices/players/utils";
+import { serverStore } from "server/infra/store";
+import { selectPlayerBalances, selectPlayerData } from "shared/infra/store/selectors/players";
+import { PlayerData } from "shared/infra/store/slices/players/types";
+import { defaultPlayerData } from "shared/infra/store/slices/players/utils";
 import { forEveryPlayer } from "shared/utils/functions/forEveryPlayer";
 
 let DataStoreName = "Production";

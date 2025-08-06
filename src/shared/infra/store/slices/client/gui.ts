@@ -1,5 +1,5 @@
 import { createProducer } from "@rbxts/reflex";
-import { HolderPage } from "shared/configs/Gui";
+import { HolderPage } from "shared/domain/Gui";
 
 export interface GuiState {
     holderPage?: HolderPage

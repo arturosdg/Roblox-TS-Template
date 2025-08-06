@@ -1,4 +1,4 @@
-import { serverStore } from "server/store";
+import { serverStore } from "server/infra/store";
 
 /**
  * To prevent the state from being polluted between tests, we flush the state

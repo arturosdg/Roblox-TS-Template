@@ -3,8 +3,8 @@ import ReactRoblox from "@rbxts/react-roblox";
 import { clientStore } from "client/infra/store";
 import { ReflexProvider } from "@rbxts/react-reflex";
 import HolderApp from "../app/holder/holder-app";
-import { HOLDER_PAGES } from "shared/configs/Gui";
-import { defaultPlayerData } from "shared/store/slices/players/utils";
+import { HOLDER_PAGES } from "shared/domain/Gui";
+import { defaultPlayerData } from "shared/infra/store/slices/players/utils";
 import { GetStatePlayerId } from "./utils/GetStatePlayerId";
 
 const controls = {}

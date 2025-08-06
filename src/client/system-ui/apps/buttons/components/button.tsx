@@ -2,7 +2,7 @@ import React from "@rbxts/react"
 import ImageLabel from "client/system-ui/components/imageLabel"
 import TextButton from "client/system-ui/components/textButton"
 import TextLabel from "client/system-ui/components/textLabel"
-import { COLORS, ImageName } from "shared/configs/Gui"
+import { COLORS, ImageName } from "shared/domain/Gui"
 
 interface Props {
     button: string,

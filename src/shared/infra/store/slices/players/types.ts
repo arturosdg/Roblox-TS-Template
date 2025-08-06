@@ -1,5 +1,5 @@
-import { Currency } from "shared/configs/Currency";
-import { Setting } from "shared/configs/Settings";
+import { Currency } from "shared/domain/Currency";
+import { Setting } from "shared/domain/Settings";
 
 export interface PlayerData {
     balance: PlayerBalance

@@ -1,7 +1,7 @@
 import { Service, OnStart } from "@flamework/core";
-import { ServerEvents } from "server/network";
-import { serverStore } from "server/store";
-import { Setting } from "shared/configs/Settings";
+import { ServerEvents } from "server/infra/network";
+import { serverStore } from "server/infra/store";
+import { Setting } from "shared/domain/Settings";
 
 @Service({})
 export class SettingsService implements OnStart {

@@ -1,10 +1,10 @@
-import { HolderPage, ImageName } from "shared/configs/Gui";
+import { HolderPage, ImageName } from "shared/domain/Gui";
 import React from "@rbxts/react";
 import Frame from "client/system-ui/components/frame";
 import Object from "@rbxts/object-utils";
 import Button from "./components/button";
 import { clientStore } from "client/infra/store";
-import { selectHolderPage } from "shared/store/selectors/client";
+import { selectHolderPage } from "shared/infra/store/selectors/client";
 
 const BUTTONS: Partial<Record<HolderPage, ImageName>> = {
     Settings: "Settings"

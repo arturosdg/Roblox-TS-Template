@@ -1,6 +1,6 @@
-import { serverStore } from "server/store"
-import { selectPlayerBalance, selectPlayerBalances } from "shared/store/selectors/players"
-import { defaultPlayerData } from "shared/store/slices/players/utils"
+import { serverStore } from "server/infra/store"
+import { selectPlayerBalance, selectPlayerBalances } from "shared/infra/store/selectors/players"
+import { defaultPlayerData } from "shared/infra/store/slices/players/utils"
 import { resetStore } from "../utils/resetStore"
 
 export = () => {
