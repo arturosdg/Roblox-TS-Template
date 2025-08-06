@@ -9,6 +9,8 @@ The goal of this project is to be able to quickly launch into creating your next
 
 ## Instructions 🛠️
 
+Install [foreman](https://github.com/Roblox/foreman)
+
 To set up and start using this template, use these three commands in a terminal located in the same directory as this repository:
 
 1. `npm i` - Installs all dependencies.
@@ -27,7 +29,7 @@ TIP: If you've followed those steps, but receive an error in the terminal simila
 * [React](https://www.npmjs.com/package/@rbxts/react-roblox)
 * [Reflex](https://littensy.github.io/reflex/)
 * [UI Labs](https://ui-labs-roblox.github.io/ui-labs-docs/)
-* [TestEZ](https://www.npmjs.com/package/@rbxts/testez)
+* [Jest](https://www.npmjs.com/package/@rbxts/jest)
 * [rbxts-transform-debug](https://www.npmjs.com/package/rbxts-transform-debug)
 
 ## Features 🎮
@@ -41,7 +43,8 @@ TIP: If you've followed those steps, but receive an error in the terminal simila
 ## Tips 💡
 
 ### Tests
-Download and use the [TestEZ Companion](https://marketplace.visualstudio.com/items?itemName=tacheometrist.testez-companion) Visual Studio Code plugin to run your tests without even starting your game!
+You need to enable Flag { "FFlagEnableLoadModule": true } 
+Use this issue to figure it out: [issue](https://github.com/jsdotlua/jest-lua/issues/6)
 
 ### Linting
 I found myself constantly struggling with using ESLint & Prettier for linting. Until I discovered the [Prettier ESLint](https://marketplace.visualstudio.com/items?itemName=rvest.vs-code-prettier-eslint) Visual Studio Code plugin. You should still have the [ESLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint) plugin installed, but you only need to have the Prettier ESLint plugin enabled.
