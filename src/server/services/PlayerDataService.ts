@@ -3,7 +3,7 @@ import { OnInit, Service } from "@flamework/core";
 import ProfileService from "@rbxts/profileservice";
 import { Profile } from "@rbxts/profileservice/globals";
 import { Players, RunService } from "@rbxts/services";
-import { store } from "server/store";
+import { serverStore } from "server/store";
 import { selectPlayerBalances, selectPlayerData } from "shared/store/selectors/players";
 import { PlayerData } from "shared/store/slices/players/types";
 import { defaultPlayerData } from "shared/store/slices/players/utils";
@@ -27,7 +27,7 @@ export class PlayerDataService implements OnInit {
 
 		task.spawn(() => {
 			while (true) {
-				Players.GetPlayers().forEach((player) => store.changeBalance(tostring(player.UserId), "Coins", 1));
+				Players.GetPlayers().forEach((player) => serverStore.changeBalance(tostring(player.UserId), "Coins", 1));
 				task.wait(1);
 			}
 		});
@@ -42,7 +42,7 @@ export class PlayerDataService implements OnInit {
 
 		profile.ListenToRelease(() => {
 			this.profiles.delete(player);
-			store.closePlayerData(tostring(player.UserId));
+			serverStore.closePlayerData(tostring(player.UserId));
 			player.Kick();
 		});
 
@@ -50,10 +50,10 @@ export class PlayerDataService implements OnInit {
 		profile.Reconcile();
 
 		this.profiles.set(player, profile);
-		store.loadPlayerData(tostring(player.UserId), profile.Data);
+		serverStore.loadPlayerData(tostring(player.UserId), profile.Data);
 		this.createLeaderstats(player);
 
-		const unsubscribe = store.subscribe(selectPlayerData(tostring(player.UserId)), (save) => {
+		const unsubscribe = serverStore.subscribe(selectPlayerData(tostring(player.UserId)), (save) => {
 			if (save) profile.Data = save;
 		});
 		Players.PlayerRemoving.Connect((player) => {
@@ -71,7 +71,7 @@ export class PlayerDataService implements OnInit {
 		const gems = new Instance("NumberValue", leaderstats);
 		gems.Name = "Gems";
 
-		const unsubscribe = store.subscribe(selectPlayerBalances(tostring(player.UserId)), (save) => {
+		const unsubscribe = serverStore.subscribe(selectPlayerBalances(tostring(player.UserId)), (save) => {
 			coins.Value = save?.Coins ?? 0;
 			gems.Value = save?.Gems ?? 0;
 		});

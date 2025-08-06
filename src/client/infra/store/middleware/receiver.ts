@@ -1,14 +1,14 @@
 import { ProducerMiddleware, createBroadcastReceiver } from "@rbxts/reflex";
-import { Events } from "client/network";
+import { ClientEvents } from "client/infra/network";
 
 export function receiverMiddleware(): ProducerMiddleware {
 	const receiver = createBroadcastReceiver({
 		start: () => {
-			Events.reflex.start.fire();
+			ClientEvents.reflex.start.fire();
 		},
 	});
 
-	Events.reflex.dispatch.connect((actions) => receiver.dispatch(actions));
+	ClientEvents.reflex.dispatch.connect((actions) => receiver.dispatch(actions));
 
 	return receiver.middleware;
 }

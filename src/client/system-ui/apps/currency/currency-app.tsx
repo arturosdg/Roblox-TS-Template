@@ -1,10 +1,10 @@
-import ScreenGui from "client/ui/components/scaledGui";
+import ScreenGui from "client/system-ui/components/scaledGui";
 import CurrencyFrame from "./components/currency-frame";
 import { CURRENCIES } from "shared/configs/Currency";
-import { store } from "client/store";
+import { clientStore } from "client/infra/store";
 import React from "@rbxts/react";
 import { ReflexProvider } from "@rbxts/react-reflex";
-import Frame from "client/ui/components/frame";
+import Frame from "client/system-ui/components/frame";
 
 export default function CurrencyApp () {
 

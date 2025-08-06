@@ -1,14 +1,14 @@
 import { useSelector } from "@rbxts/react-reflex";
 import React from "@rbxts/react";
-import { Events } from "client/network";
-import TextLabel from "client/ui/components/textLabel";
+import { ClientEvents } from "client/infra/network";
+import TextLabel from "client/system-ui/components/textLabel";
 import { Setting } from "shared/configs/Settings";
 import { Players, RunService } from "@rbxts/services";
 import { selectPlayerSetting } from "shared/store/selectors/players";
-import { GetStatePlayerId } from "client/ui/utils/GetStatePlayerId";
-import { store } from "client/store";
+import { GetStatePlayerId } from "client/system-ui/utils/GetStatePlayerId";
+import { clientStore } from "client/infra/store";
 import { COLORS } from "shared/configs/Gui";
-import TextButton from "client/ui/components/textButton";
+import TextButton from "client/system-ui/components/textButton";
 
 interface Props {
     setting: Setting
@@ -20,9 +20,9 @@ export default function SettingButton ( props: Props ) {
     const click = () => {
         const isInGame = RunService.IsRunning();
         if ( isInGame )
-            Events.toggleSetting( props.setting );
+            ClientEvents.toggleSetting( props.setting );
         else
-            store.toggleSetting( GetStatePlayerId(), props.setting );
+            clientStore.toggleSetting( GetStatePlayerId(), props.setting );
     }
 
     return (

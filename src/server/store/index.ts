@@ -2,7 +2,7 @@ import { InferState, combineProducers } from "@rbxts/reflex";
 import { slices } from "shared/store";
 import { broadcasterMiddleware } from "./middleware/broadcaster";
 
-export type RootState = InferState<typeof store>;
+export type RootState = InferState<typeof serverStore>;
 
 export function createStore() {
 	const store = combineProducers({
@@ -15,4 +15,4 @@ export function createStore() {
 	return store;
 }
 
-export const store = createStore();
+export const serverStore = createStore();

@@ -1,5 +1,5 @@
 import React from "@rbxts/react";
-import { store } from "client/store";
+import { clientStore } from "client/infra/store";
 import { COLORS } from "shared/configs/Gui";
 
 interface Props extends React.PropsWithChildren {
@@ -21,7 +21,7 @@ export default function Exit ( props: Props ) {
 			Text={""}
 			Event={{
 				MouseButton1Click: () => {
-					store.setHolderPage();
+					clientStore.setHolderPage();
 				}
 			}}
 		>

@@ -1,15 +1,15 @@
 import React, { useEffect, useState } from "@rbxts/react";
-import Frame from "client/ui/components/frame";
-import SettingsApp from "../settings/settings-app";
+import Frame from "client/system-ui/components/frame";
+import SettingsApp from "../../system-ui/apps/settings/settings-app";
 import { useSelector } from "@rbxts/react-reflex";
-import CurrencyApp from "../currency/currency-app";
+import CurrencyApp from "../../system-ui/apps/currency/currency-app";
 import { HOLDER_PAGES } from "shared/configs/Gui";
-import { store } from "client/store";
+import { clientStore } from "client/infra/store";
 import { RunService, StarterGui } from "@rbxts/services";
-import { Events } from "client/network";
+import { ClientEvents } from "client/infra/network";
 import { selectHolderPage } from "shared/store/selectors/client";
-import ButtonsApp from "../buttons/buttons-app";
-import TextButton from "client/ui/components/textButton";
+import ButtonsApp from "../../system-ui/apps/buttons/buttons-app";
+import TextButton from "client/system-ui/components/textButton";
 
 export default function HolderApp () {
 	const page = useSelector( selectHolderPage )
@@ -28,9 +28,9 @@ export default function HolderApp () {
 		const previousIndex = ( index - 1 + HOLDER_PAGES.size() ) % HOLDER_PAGES.size()
 
 		if ( direction === "next" ) {
-			store.setHolderPage( HOLDER_PAGES[nextIndex] )
+			clientStore.setHolderPage( HOLDER_PAGES[nextIndex] )
 		} else {
-			store.setHolderPage( HOLDER_PAGES[previousIndex] )
+			clientStore.setHolderPage( HOLDER_PAGES[previousIndex] )
 		}
 	}
 

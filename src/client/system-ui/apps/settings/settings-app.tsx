@@ -1,8 +1,8 @@
 import React from "@rbxts/react";
-import ContainerFrame from "client/ui/components/containerFrame";
-import Exit from "client/ui/components/exit";
-import Frame from "client/ui/components/frame";
-import Title from "client/ui/components/title";
+import ContainerFrame from "client/system-ui/components/containerFrame";
+import Exit from "client/system-ui/components/exit";
+import Frame from "client/system-ui/components/frame";
+import Title from "client/system-ui/components/title";
 import { SETTINGS } from "shared/configs/Settings";
 import SettingButton from "./components/setting-button";
 

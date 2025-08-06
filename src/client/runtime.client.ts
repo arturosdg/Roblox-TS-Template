@@ -1,7 +1,8 @@
 import { Flamework } from "@flamework/core";
+import { CmdrClient } from "@rbxts/cmdr";
 
-Flamework.addPaths("src/client/components");
-Flamework.addPaths("src/client/controllers");
-Flamework.addPaths("src/shared/components");
+CmdrClient.SetActivationKeys([Enum.KeyCode.F2]);
+
+Flamework.addPaths("src/client/pages");
 
 Flamework.ignite();

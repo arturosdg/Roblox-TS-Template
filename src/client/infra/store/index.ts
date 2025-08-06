@@ -2,7 +2,7 @@ import { InferState, combineProducers } from "@rbxts/reflex";
 import { slices } from "shared/store";
 import { receiverMiddleware } from "./middleware/receiver";
 
-export type RootStore = typeof store;
+export type RootStore = typeof clientStore;
 
 export type RootState = InferState<RootStore>;
 
@@ -16,4 +16,4 @@ export function createStore() {
 	return store;
 }
 
-export const store = createStore();
+export const clientStore = createStore();

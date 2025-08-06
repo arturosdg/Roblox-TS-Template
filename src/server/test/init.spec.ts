@@ -1,7 +1,7 @@
 /// <reference types="@rbxts/testez/globals" />
 
 import { RunService } from "@rbxts/services";
-import { store } from "server/store";
+import { serverStore } from "server/store";
 
 export = () => {
     afterAll( () => {
@@ -9,6 +9,6 @@ export = () => {
             return;
         }
 
-        store.destroy();
+        serverStore.destroy();
     } );
 };
