@@ -1,0 +1,18 @@
+version: 2
+updates:
+  # Keep npm (JavaScript/TypeScript) dependencies up to date
+  - package-ecosystem: "npm"
+    directory: "/" # Location of package.json
+    schedule:
+      interval: "daily" # daily, weekly, or monthly
+    open-pull-requests-limit: 10
+    versioning-strategy: increase
+    commit-message:
+      prefix: "deps"
+      include: "scope"
+
+  # (Optional) Keep GitHub Actions workflows up to date too
+  - package-ecosystem: "github-actions"
+    directory: "/"
+    schedule:
+      interval: "weekly"
