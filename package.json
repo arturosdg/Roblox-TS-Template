@@ -42,6 +42,6 @@
     "@rbxts/signal": "^1.1.1",
     "@rbxts/t": "^3.2.1",
     "@rbxts/testez": "^0.4.2-ts.0",
-    "@rbxts/ui-labs": "^2.4.0"
+    "@rbxts/ui-labs": "^2.4.1"
   }
 }
