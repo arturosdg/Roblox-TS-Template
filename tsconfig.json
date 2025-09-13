@@ -14,6 +14,7 @@
     "strict": true,
     "target": "ESNext",
     "typeRoots": ["node_modules/@rbxts", "node_modules/@flamework"],
+    "skipLibCheck": true,
 
     // configurable
     "rootDir": "src",
@@ -37,5 +38,14 @@
 				},
 			}
     ]
-  }
+  },
+"include": [
+	"src/**/*"
+],
+"exclude": [
+	"node_modules",
+	"out",
+	"**/*.spec.ts",
+	"**/*.test.ts"
+]
 }

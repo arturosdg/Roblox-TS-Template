@@ -7,7 +7,6 @@
 	  "sourceType": "module",
 	  "project": "./tsconfig.json"
 	},
-	"ignorePatterns": ["/out", "/types"],
 	"plugins": ["@typescript-eslint", "roblox-ts", "prettier"],
 	"extends": [
 	  "eslint:recommended",
@@ -29,7 +28,7 @@
 	  ],
 
 	  "@typescript-eslint/array-type": ["error", { "default": "generic" }],
-	  "roblox-ts/no-private-identifier": "off",
+	  "roblox-ts/no-private-identifier": "off"
 
 	//   "@typescript-eslint/naming-convention": [
 	// 	"error",
