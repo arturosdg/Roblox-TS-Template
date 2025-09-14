@@ -1,9 +1,7 @@
 import React, { createRef, useEffect } from "@rbxts/react";
 import { CollectionService } from "@rbxts/services";
 
-interface Props extends React.PropsWithChildren {}
-
-export default function ScreenGui(props: Props) {
+export default function ScreenGui(props: React.PropsWithChildren) {
 	const uiScaleRef = createRef<UIScale>();
 
 	useEffect(() => {

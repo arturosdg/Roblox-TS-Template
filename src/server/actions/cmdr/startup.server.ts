@@ -1,7 +1,7 @@
 import { Cmdr } from "@rbxts/cmdr";
 
-const parent = <Folder>script.Parent
+const parent = script.Parent as Folder;
 
-Cmdr.RegisterDefaultCommands()
-Cmdr.RegisterCommandsIn( <Folder>parent.FindFirstChild( "commands" ) )
-Cmdr.RegisterTypesIn( <Folder>parent.FindFirstChild( "types" ) )
+Cmdr.RegisterDefaultCommands();
+Cmdr.RegisterCommandsIn(parent.FindFirstChild("commands") as Folder);
+Cmdr.RegisterTypesIn(parent.FindFirstChild("types") as Folder);

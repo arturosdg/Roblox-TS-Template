@@ -1,28 +1,26 @@
 import { createProducer } from "@rbxts/reflex";
 import { PlayerData, PlayerSettings } from "./types";
 
-export interface SettingsState {
-    readonly [player: string]: PlayerSettings | undefined;
-}
+export type SettingsState = Readonly<Record<string, PlayerSettings | undefined>>;
 
 const initialState: SettingsState = {};
 
-export const settingsSlice = createProducer( initialState, {
-    loadPlayerData: ( state, player: string, data: PlayerData ) => ( {
-        ...state,
-        [player]: data.settings,
-    } ),
+export const settingsSlice = createProducer(initialState, {
+	loadPlayerData: (state, player: string, data: PlayerData) => ({
+		...state,
+		[player]: data.settings,
+	}),
 
-    closePlayerData: ( state, player: string ) => ( {
-        ...state,
-        [player]: undefined,
-    } ),
+	closePlayerData: (state, player: string) => ({
+		...state,
+		[player]: undefined,
+	}),
 
-    toggleSetting: ( state, player: string, setting: keyof PlayerSettings ) => ( {
-        ...state,
-        [player]: {
-            ...state[player]!,
-            [setting]: !state[player]![setting],
-        },
-    } )
-} );
+	toggleSetting: (state, player: string, setting: keyof PlayerSettings) => ({
+		...state,
+		[player]: {
+			...state[player]!,
+			[setting]: !state[player]![setting],
+		},
+	}),
+});

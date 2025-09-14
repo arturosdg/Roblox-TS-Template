@@ -9,7 +9,7 @@ interface Props extends React.PropsWithChildren {
 	size: UDim2;
 }
 
-export default function Exit ( props: Props ) {
+export default function Exit(props: Props) {
 	return (
 		<textbutton
 			key="Exit"
@@ -22,27 +22,24 @@ export default function Exit ( props: Props ) {
 			Event={{
 				MouseButton1Click: () => {
 					clientStore.setHolderPage();
-				}
+				},
 			}}
 		>
 			<textlabel
 				key="X"
 				BackgroundTransparency={1}
 				Font={Enum.Font.FredokaOne}
-				AnchorPoint={new Vector2( 0.5, 0.5 )}
-				Position={new UDim2( 0.5, 0, 0.5, 0 )}
-				Size={new UDim2( 1, 0, 1, 0 )}
+				AnchorPoint={new Vector2(0.5, 0.5)}
+				Position={new UDim2(0.5, 0, 0.5, 0)}
+				Size={new UDim2(1, 0, 1, 0)}
 				Text="X"
 				TextColor3={COLORS.White}
 				TextSize={38}
 			>
 				<uistroke Thickness={5} />
 			</textlabel>
-			<uistroke
-				ApplyStrokeMode={Enum.ApplyStrokeMode.Border}
-				Thickness={props.uiStrokeSize ?? 5}
-			/>
-			<uicorner CornerRadius={new UDim( 0, 18 )} />
+			<uistroke ApplyStrokeMode={Enum.ApplyStrokeMode.Border} Thickness={props.uiStrokeSize ?? 5} />
+			<uicorner CornerRadius={new UDim(0, 18)} />
 		</textbutton>
 	);
 }

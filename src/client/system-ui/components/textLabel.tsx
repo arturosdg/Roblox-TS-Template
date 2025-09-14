@@ -19,8 +19,8 @@ interface Props extends React.PropsWithChildren {
 	zIndex?: number;
 }
 
-export default function TextLabel ( props: Props ) {
-	if ( !props.automaticSize || !props.size ) {
+export default function TextLabel(props: Props) {
+	if (!props.automaticSize || !props.size) {
 		props.automaticSize = props.size ? Enum.AutomaticSize.None : Enum.AutomaticSize.XY;
 	}
 
@@ -28,12 +28,12 @@ export default function TextLabel ( props: Props ) {
 		<textlabel
 			key={props.key ?? props.text}
 			AutomaticSize={props.automaticSize}
-			Position={props.position ?? new UDim2( 0.5, 0, 0.5, 0 )}
-			AnchorPoint={props.anchorPoint ?? new Vector2( 0.5, 0.5 )}
+			Position={props.position ?? new UDim2(0.5, 0, 0.5, 0)}
+			AnchorPoint={props.anchorPoint ?? new Vector2(0.5, 0.5)}
 			Size={props.size}
 			TextScaled={props.textScaled}
 			Font={Enum.Font.FredokaOne}
-			TextColor3={props.textColor3 ?? new Color3( 1, 1, 1 )}
+			TextColor3={props.textColor3 ?? new Color3(1, 1, 1)}
 			TextXAlignment={props.textXAlignment}
 			TextYAlignment={props.textYAlignment}
 			Text={props.text}

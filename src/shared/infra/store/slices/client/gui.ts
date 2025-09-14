@@ -2,17 +2,14 @@ import { createProducer } from "@rbxts/reflex";
 import { HolderPage } from "shared/domain/Gui";
 
 export interface GuiState {
-    holderPage?: HolderPage
+	holderPage?: HolderPage;
 }
 
-const initalState: GuiState = {
+const initalState: GuiState = {};
 
-};
-
-
-export const guiSlice = createProducer( initalState, {
-    setHolderPage: ( state, page?: HolderPage ) => ( {
-        ...state,
-        holderPage: page,
-    })
-})
+export const guiSlice = createProducer(initalState, {
+	setHolderPage: (state, page?: HolderPage) => ({
+		...state,
+		holderPage: page,
+	}),
+});

@@ -1,4 +1,4 @@
 export = {
-    name: "UI",
-    storyRoots: [script.Parent],
+	name: "UI",
+	storyRoots: [script.Parent],
 };

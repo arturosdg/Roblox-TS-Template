@@ -19,34 +19,33 @@ interface Props extends React.PropsWithChildren {
 	uiTextStrokeSize?: number;
 }
 
-export default function Title ( props: Props ) {
+export default function Title(props: Props) {
 	const zIndex = props.zIndex ?? 1;
 
 	return (
 		<Frame
 			key="Title"
-			backgroundColor3={props.backgroundColor3 ?? Color3.fromRGB( 0, 137, 215 )}
+			backgroundColor3={props.backgroundColor3 ?? Color3.fromRGB(0, 137, 215)}
 			anchorPoint={props.anchorPoint}
 			position={props.position}
 			size={props.size}
 			layoutOrder={props.layoutOrder}
 			zIndex={zIndex}
-			uiCornerSize={props.uiCornerSize ?? new UDim( 0, 31 )}
+			uiCornerSize={props.uiCornerSize ?? new UDim(0, 31)}
 			uiStrokeSize={props.uiStrokeSize ?? 0}
 		>
-			{props["children"]}
+			{props.children}
 
 			<TextLabel
 				key="Title"
-				anchorPoint={new Vector2( 0.5, 0.5 )}
-				position={new UDim2( 0.5, 0, 0.5, 0 )}
-				size={new UDim2( 1, 0, 1, 0 )}
+				anchorPoint={new Vector2(0.5, 0.5)}
+				position={new UDim2(0.5, 0, 0.5, 0)}
+				size={new UDim2(1, 0, 1, 0)}
 				text={props.text}
 				textSize={props.textSize ?? 60}
 				textXAlignment={props.textXAlignment ?? Enum.TextXAlignment.Center}
 				uiStrokeSize={props.uiTextStrokeSize ?? 5}
-			>
-			</TextLabel>
+			></TextLabel>
 		</Frame>
 	);
 }

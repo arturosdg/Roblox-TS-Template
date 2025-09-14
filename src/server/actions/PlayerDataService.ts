@@ -1,4 +1,3 @@
-/* eslint-disable roblox-ts/no-private-identifier */
 import { OnInit, Service } from "@flamework/core";
 import ProfileService from "@rbxts/profileservice";
 import { Profile } from "@rbxts/profileservice/globals";
@@ -12,7 +11,7 @@ import { forEveryPlayer } from "shared/utils/functions/forEveryPlayer";
 let DataStoreName = "Production";
 const KEY_TEMPLATE = "%d_Data";
 
-if ( RunService.IsStudio() ) DataStoreName = "Testing";
+if (RunService.IsStudio()) DataStoreName = "Testing";
 
 @Service()
 export class PlayerDataService implements OnInit {
@@ -27,7 +26,9 @@ export class PlayerDataService implements OnInit {
 
 		task.spawn(() => {
 			while (true) {
-				Players.GetPlayers().forEach((player) => serverStore.changeBalance(tostring(player.UserId), "Coins", 1));
+				Players.GetPlayers().forEach((player) =>
+					serverStore.changeBalance(tostring(player.UserId), "Coins", 1),
+				);
 				task.wait(1);
 			}
 		});
