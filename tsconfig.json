@@ -13,39 +13,31 @@
     "resolveJsonModule": true,
     "strict": true,
     "target": "ESNext",
-    "typeRoots": ["node_modules/@rbxts", "node_modules/@flamework"],
+    "typeRoots": [
+      "node_modules/@rbxts",
+      "node_modules/@flamework"
+    ],
     "skipLibCheck": true,
-
     // configurable
     "rootDir": "src",
     "outDir": "out",
     "baseUrl": "src",
     "incremental": true,
     "tsBuildInfoFile": "out/tsconfig.tsbuildinfo",
-
     "experimentalDecorators": true,
     "plugins": [
       {
         "transform": "rbxts-transformer-flamework",
         "obfuscation": false
       },
-			{
-				"transform": "rbxts-transform-debug",
-				"enabled": true,
-				"verbose": true,
-				"environmentRequires": {
-					//"NODE_ENV": "development"
-				},
-			}
+      {
+        "transform": "rbxts-transform-debug",
+        "enabled": true,
+        "verbose": true,
+        "environmentRequires": {
+          //"NODE_ENV": "development"
+        }
+      }
     ]
-  },
-"include": [
-	"src/**/*"
-],
-"exclude": [
-	"node_modules",
-	"out",
-	"**/*.spec.ts",
-	"**/*.test.ts"
-]
+  }
 }
