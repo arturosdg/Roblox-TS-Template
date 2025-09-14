@@ -1,14 +1,11 @@
 import React, { createRef, useEffect } from "@rbxts/react";
 import { CollectionService } from "@rbxts/services";
-interface Props extends React.PropsWithChildren {
 
-}
-
-export default function ScreenGui(props: Props) {
-	const uiScaleRef = createRef<UIScale>()
+export default function ScreenGui(props: React.PropsWithChildren) {
+	const uiScaleRef = createRef<UIScale>();
 
 	useEffect(() => {
-		const uiScale = uiScaleRef.current
+		const uiScale = uiScaleRef.current;
 		if (!uiScale) return;
 
 		CollectionService.AddTag(uiScale, "scale_component");
@@ -16,16 +13,9 @@ export default function ScreenGui(props: Props) {
 	}, []);
 
 	return (
-		<screengui
-			Enabled={true}
-		>
-			<uiscale
-				Scale={1}
-				ref={uiScaleRef}
-			/>
-
-			{props["children"]}
-
+		<screengui Enabled={true}>
+			<uiscale Scale={1} ref={uiScaleRef} />
+			{props.children}
 		</screengui>
 	);
 }

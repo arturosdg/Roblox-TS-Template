@@ -5,8 +5,8 @@ import { serverStore } from "server/infra/store";
  * before and after resetting it. This ensures that subscriptions run for the
  * changes they were intended to run for, and resets are handled separately.
  */
-export function resetStore () {
-    serverStore.flush();
-    serverStore.resetState();
-    serverStore.flush();
+export function resetStore() {
+	serverStore.flush();
+	serverStore.resetState();
+	serverStore.flush();
 }

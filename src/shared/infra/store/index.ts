@@ -5,6 +5,6 @@ import { clientSlice } from "./slices/client";
 export type SharedState = CombineStates<typeof slices>;
 
 export const slices = {
-  players: playersSlice,
-  client: clientSlice,
+	players: playersSlice,
+	client: clientSlice,
 };

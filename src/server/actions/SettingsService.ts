@@ -5,11 +5,11 @@ import { Setting } from "shared/domain/Settings";
 
 @Service({})
 export class SettingsService implements OnStart {
-    onStart() {
-        ServerEvents.toggleSetting.connect((player, setting) => this.toggleSetting(player, setting));
-    }
+	onStart() {
+		ServerEvents.toggleSetting.connect((player, setting) => this.toggleSetting(player, setting));
+	}
 
-    private toggleSetting ( player: Player, setting: Setting ) {
-        serverStore.toggleSetting( tostring( player.UserId ), setting )
-    }
+	private toggleSetting(player: Player, setting: Setting) {
+		serverStore.toggleSetting(tostring(player.UserId), setting);
+	}
 }

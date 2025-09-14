@@ -11,13 +11,17 @@ import ScreenGui from "client/system-ui/components/scaledGui";
 export class App implements OnStart {
 	private playerGui = Players.LocalPlayer.WaitForChild("PlayerGui");
 
-	onStart () {
-		const root = createRoot( new Instance( "Folder" ) )
-		root.render( createPortal( <ReflexProvider producer={clientStore}>
-			<ScreenGui>
-				<HolderApp />
-			</ScreenGui>
-		</ReflexProvider>
-			, this.playerGui ) )
+	onStart() {
+		const root = createRoot(new Instance("Folder"));
+		root.render(
+			createPortal(
+				<ReflexProvider producer={clientStore}>
+					<ScreenGui>
+						<HolderApp />
+					</ScreenGui>
+				</ReflexProvider>,
+				this.playerGui,
+			),
+		);
 	}
 }

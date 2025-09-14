@@ -7,26 +7,24 @@ import { HOLDER_PAGES } from "shared/domain/Gui";
 import { defaultPlayerData } from "shared/infra/store/slices/players/utils";
 import { GetStatePlayerId } from "./utils/GetStatePlayerId";
 
-const controls = {}
-
 const Story = {
-    summary: "Holder",
-    react: React,
-    reactRoblox: ReactRoblox,
-    story: () => {
-        const latestPage = HOLDER_PAGES[HOLDER_PAGES.size() - 1]
-        clientStore.loadPlayerData( GetStatePlayerId(), defaultPlayerData )
-        clientStore.setHolderPage( latestPage )
-        clientStore.toggleSetting( GetStatePlayerId(), "PvP" )
+	summary: "Holder",
+	react: React,
+	reactRoblox: ReactRoblox,
+	story: () => {
+		const latestPage = HOLDER_PAGES[HOLDER_PAGES.size() - 1];
+		clientStore.loadPlayerData(GetStatePlayerId(), defaultPlayerData);
+		clientStore.setHolderPage(latestPage);
+		clientStore.toggleSetting(GetStatePlayerId(), "PvP");
 
-        // store.setHolderPage( "Settings" )
+		// store.setHolderPage( "Settings" )
 
-        return (
-            <ReflexProvider producer={clientStore}>
-                <HolderApp />
-            </ReflexProvider>
-        )
-    },
-}
+		return (
+			<ReflexProvider producer={clientStore}>
+				<HolderApp />
+			</ReflexProvider>
+		);
+	},
+};
 
-export = Story
+export = Story;
