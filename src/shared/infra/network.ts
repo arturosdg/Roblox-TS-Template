@@ -11,9 +11,7 @@ interface ServerEvents {
 	toggleSetting: (setting: Setting) => void;
 }
 
-interface ServerFunctions {
-	F;
-}
+interface ServerFunctions {}
 
 interface ClientEvents {
 	reflex: {
