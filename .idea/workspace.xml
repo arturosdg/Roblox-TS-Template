@@ -5,10 +5,62 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6124b77b-c011-492f-b91f-d1b5b7050778" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/client/controllers/GuiController.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/client/controllers/GuiController.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/client/ui/components/scaledGui.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/client/ui/components/scaledGui.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tsconfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/tsconfig.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.cursor/mcp.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.eslintrc.json" beforeDir="false" afterPath="$PROJECT_DIR$/.eslintrc.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.github/dependabot.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/Roblox-TS-Template.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/app/holder/holder-app.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/infra/network.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/infra/store/index.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/infra/store/middleware/receiver.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/pages/App.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/runtime.client.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/client/runtime.client.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/system-ui/apps/buttons/buttons-app.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/system-ui/apps/buttons/components/button.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/system-ui/apps/currency/components/currency-frame.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/system-ui/apps/currency/currency-app.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/system-ui/apps/settings/components/setting-button.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/system-ui/apps/settings/settings-app.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/system-ui/components/containerFrame.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/system-ui/components/exit.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/system-ui/components/frame.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/system-ui/components/imageLabel.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/system-ui/components/scaledGui.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/system-ui/components/textButton.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/system-ui/components/textLabel.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/system-ui/components/textLabelButton.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/system-ui/components/title.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/system-ui/holder.story.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/system-ui/ui.storybook.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/system-ui/utils/GetStatePlayerId.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/server/actions/PlayerDataService.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/server/actions/SettingsService.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/server/actions/cmdr/commands/giveCurrency.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/server/actions/cmdr/commands/giveCurrencyServer.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/server/actions/cmdr/startup.server.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/server/actions/cmdr/types/currency.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/server/infra/network.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/server/infra/store/index.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/server/infra/store/middleware/broadcaster.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/shared/domain/Currency.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/shared/domain/Gui.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/shared/domain/Settings.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/shared/infra/network.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/shared/infra/store/index.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/shared/infra/store/selectors/client.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/shared/infra/store/selectors/players.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/shared/infra/store/slices/client/gui.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/shared/infra/store/slices/client/index.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/shared/infra/store/slices/players/balance.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/shared/infra/store/slices/players/index.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/shared/infra/store/slices/players/settings.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/shared/infra/store/slices/players/types.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/shared/infra/store/slices/players/utils.ts" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21,6 +73,12 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/arturosdg/Roblox-TS-Template.git",
+    "accountId": "cb9ad0ef-4e2f-43a8-9fb9-597fe5a52ed3"
+  }
+}]]></component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 4
 }</component>
@@ -35,7 +93,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager": "true",
     "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "add-pipeline",
+    "git-widget-placeholder": "#11 on add-pipeline",
     "ignore.virus.scanning.warn.message": "true",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.standard": "true",
@@ -101,7 +159,7 @@
       <workItem from="1757711474560" duration="510000" />
       <workItem from="1757712008715" duration="1393000" />
       <workItem from="1757755936048" duration="2604000" />
-      <workItem from="1757862902057" duration="285000" />
+      <workItem from="1757862902057" duration="599000" />
     </task>
     <servers />
   </component>
