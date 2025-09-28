@@ -3,5 +3,5 @@
 /include
 *.tsbuildinfo
 flamework.build
-.idea
+/.idea
 .vscode
