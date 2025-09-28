@@ -87,7 +87,11 @@ export class AgentService implements OnInit {
 		}
 	}
 
-	private createAgentContext(config: AgentConfig): AgentContext {
+	createAgentContext(config: AgentConfig): AgentContext {
+		return this.createAgentContextInternal(config);
+	}
+
+	private createAgentContextInternal(config: AgentConfig): AgentContext {
 		const agentService = this;
 
 		const logger: AgentLogger = {

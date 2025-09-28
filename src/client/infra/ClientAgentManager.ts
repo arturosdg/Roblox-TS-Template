@@ -46,8 +46,8 @@ export class ClientAgentManager implements OnStart {
 					this.agentMetadata.set(agent.id, agent);
 				});
 			})
-			.catch((error) => {
-				warn(`[ClientAgentManager] Failed to load agent metadata: ${String(error)}`);
+			.catch((err) => {
+				warn(`[ClientAgentManager] Failed to load agent metadata: ${tostring(err)}`);
 			});
 	}
 
@@ -72,9 +72,9 @@ export class ClientAgentManager implements OnStart {
 	async callFunction(agentId: string, functionName: string, data: unknown): Promise<unknown> {
 		try {
 			return await Functions.agents.call(agentId, functionName, data);
-		} catch (error) {
+		} catch (err) {
 			warn(
-				`[ClientAgentManager] Failed to call function ${functionName} on agent ${agentId}: ${String(error)}`,
+				`[ClientAgentManager] Failed to call function ${functionName} on agent ${agentId}: ${tostring(err)}`,
 			);
 			return undefined;
 		}
