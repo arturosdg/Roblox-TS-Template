@@ -16,14 +16,6 @@ This rule ensures:
 
 ## Planned Architecture
 
-The agent system will consist of these core components when implemented:
-
-### Core Components
-- **BaseAgent** - Abstract base class for all agents
-- **AgentRegistry** - Agent lifecycle and dependency management
-- **AgentService** (Server) - Server-side agent operations
-- **ClientAgentManager** (Client) - Client-side agent coordination
-
 ### Key Principles
 - **SOLID Principles**: Clean, maintainable architecture
 - **LEAN/YAGNI**: Minimal viable implementation
