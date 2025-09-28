@@ -1,7 +1,6 @@
 import React from "@rbxts/react";
 import Frame from "client/system-ui/components/frame";
 import SettingsApp from "../../system-ui/apps/settings/settings-app";
-import AgentsApp from "../../system-ui/apps/agents/agents-app";
 import { useSelector } from "@rbxts/react-reflex";
 import CurrencyApp from "../../system-ui/apps/currency/currency-app";
 import { HOLDER_PAGES } from "shared/domain/Gui";
@@ -17,8 +16,6 @@ export default function HolderApp() {
 	function getApp() {
 		if (page === "Settings") {
 			return <SettingsApp />;
-		} else if (page === "Agents") {
-			return <AgentsApp />;
 		}
 	}
 

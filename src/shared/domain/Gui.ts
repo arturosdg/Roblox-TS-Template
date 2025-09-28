@@ -1,4 +1,4 @@
-export const HOLDER_PAGES = ["Settings", "Agents"] as const;
+export const HOLDER_PAGES = ["Settings"] as const;
 export type HolderPage = (typeof HOLDER_PAGES)[number];
 
 export const COLORS = {
