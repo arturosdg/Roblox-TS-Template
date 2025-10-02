@@ -9,13 +9,17 @@ The goal of this project is to be able to quickly launch into creating your next
 
 ## Instructions 🛠️
 
-To set up and start using this template, use these three commands in a terminal located in the same directory as this repository:
+To set up and start using this template, use these commands in a terminal located in the same directory as this repository:
 
 1. `npm i` - Installs all dependencies.
 2. `npm run build` - Builds the project.
-3. `npm run watch` - Initiates the watch mode for continuous development.
+3. `npm start` - Starts both watch mode and Rojo server for development.
 
-Startup **Rojo** and you should be able to sync to Studio easily!
+Alternatively, you can run the processes separately:
+- `npm run watch` - Initiates the watch mode for continuous development.
+- `npm run serve` - Starts the Rojo server.
+
+The `npm start` command will run both processes in parallel, so you can sync to Studio easily!
 
 TIP: If you've followed those steps, but receive an error in the terminal similar to `compilerOptions.jsxFactory must be Roact.createElement!` then follow these shorts steps [here](https://www.npmjs.com/package/@rbxts/react-roblox#-troubleshooting).
 
