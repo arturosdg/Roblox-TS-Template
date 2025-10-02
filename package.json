@@ -8,6 +8,7 @@
     "build": "rbxtsc",
     "watch": "rbxtsc -w",
     "serve": "rojo serve",
+    "start": "npm run watch & npm run serve",
     "typecheck": "tsc --noEmit",
     "lint": "eslint .",
     "lint:fix": "eslint . --fix"
