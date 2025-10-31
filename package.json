@@ -43,7 +43,7 @@
     "@rbxts/react-reflex": "^0.3.7",
     "@rbxts/react-roblox": "^17.2.3",
     "@rbxts/reflex": "^4.3.1",
-    "@rbxts/services": "^1.5.5",
+    "@rbxts/services": "^1.6.0",
     "@rbxts/signal": "^1.1.1",
     "@rbxts/t": "^3.2.1",
     "@rbxts/testez": "^0.4.2-ts.0",
